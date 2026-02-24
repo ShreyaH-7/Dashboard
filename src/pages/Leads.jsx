@@ -8,8 +8,6 @@ function Leads() {
   const [leads] = useState(leadsData);
   const [searchTerm, setSearchTerm] = useState("");
   const [statusFilter, setStatusFilter] = useState("All");
-
-  // Filter logic
   const filteredLeads = leads.filter((lead) => {
     const matchesSearch = lead.name
       .toLowerCase()
