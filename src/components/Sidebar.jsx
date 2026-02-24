@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom';
 function Sidebar() {
   return (
     <div className="w-64 h-screen bg-gray-900 text-white flex flex-col p-6">
@@ -5,22 +6,22 @@ function Sidebar() {
         CRM Panel
       </h1>
       <nav className="flex flex-col gap-4">
-        <button className="text-left px-4 py-2 rounded-lg hover:bg-gray-700 transition">
-          Dashboard
-        </button>
+  <Link to="/" className="px-4 py-2 rounded-lg hover:bg-gray-700">
+    Dashboard
+  </Link>
 
-        <button className="text-left px-4 py-2 rounded-lg hover:bg-gray-700 transition">
-          Leads
-        </button>
+  <Link to="/leads" className="px-4 py-2 rounded-lg hover:bg-gray-700">
+    Leads
+  </Link>
 
-        <button className="text-left px-4 py-2 rounded-lg hover:bg-gray-700 transition">
-          Reports
-        </button>
+  <Link to="/reports" className="px-4 py-2 rounded-lg hover:bg-gray-700">
+    Reports
+  </Link>
 
-        <button className="text-left px-4 py-2 rounded-lg hover:bg-gray-700 transition">
-          Settings
-        </button>
-      </nav>
+  <Link to="/settings" className="px-4 py-2 rounded-lg hover:bg-gray-700">
+    Settings
+  </Link>
+</nav>
 
     </div>
   );
